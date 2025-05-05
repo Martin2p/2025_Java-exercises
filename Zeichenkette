@@ -1,0 +1,19 @@
+import java.io.Console;
+
+public class Zeichenkette {
+
+	public static void main(String[] args) {
+		
+		//die Konsole für die Eingabe
+		Console konsole = System.console();
+		
+		System.out.println("Hallo! Bitte beliebige Zeichen eingeben: ");
+		
+		String eingabe = konsole.readLine();
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,44 @@
+import java.io.Console;
+
+public class Grundstueckspreis {
+
+	public static void main(String[] args) {
+		
+		//die Konsole für die Eingabe
+        Console konsole = System.console();
+        
+		//Quadratmeterpreis, Fläche, Provision und Mehrwertsteuer als Double deklarieren, 
+        double preisQm, flaeche;
+		
+        //Provision 5%
+		final double PROVISION = 1.05;
+		
+		//Mehrwertsteuer 19%
+		final double MWST = 1.19;
+
+		System.out.println("Hallo! Bitte die Grundstuecksabmessungen eingeben in Metern: ");
+		
+		//Grundstuecksvariablen und Preis initialisieren per Benutzereingabe über die Konsole
+		int a = Integer.parseInt(konsole.readLine());
+		int b = Integer.parseInt(konsole.readLine());
+				
+		System.out.println("Jetzt bitten den Quadratmeterpreis in Euro angeben.");
+		preisQm = Integer.parseInt(konsole.readLine());
+				
+		flaeche = a * b;
+			
+		//Grundstueckspreis berechnen
+		double preisGrundst = preisQm * flaeche;
+				
+		//Provisionsaufschlag berechnen
+		double aufschlag = preisGrundst * PROVISION;
+			
+		//finaler Grundstueckspreis inkl. Provision und Mehrwertsteuer
+		double finalPreis = aufschlag * MWST;
+			
+		//Ergebnisse ausgeben
+		System.out.println("Die Grundstruecksflaeche betraegt: " + flaeche + " qm.");
+		System.out.println("Der vorläufige Preis für das Grundstueck betraegt: " + preisGrundst + " €.\n");
+		System.out.println("Der finale Grundstueckspreis inkl. Provision und Mehrwehrtsteuer betraegt: " + finalPreis + " €");
+	}
+}

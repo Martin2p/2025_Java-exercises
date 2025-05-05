@@ -1,0 +1,42 @@
+import java.io.Console;
+
+public class ZahlenEinleser {
+
+	public static void main(String[] args) {
+		
+		//die Konsole für die Eingabe
+		Console konsole = System.console();
+		
+		System.out.println("Hallo! Bitte zwei ganze Zahlen eingeben: ");
+		
+		// 2 Variablen per Benutzereingabe über die Konsole initialisieren
+		int a = Integer.parseInt(konsole.readLine());
+		int b = Integer.parseInt(konsole.readLine());
+		
+		//Zählervariable für Anzahl der Schleifendurchläufe 
+		int zaehler = 0;
+		
+		//Bedingungen:
+		if (a > b) {
+			//Durchschleifen wenn b kleiner als a ist wird bis einschl.a aufgezählt
+			for (int i = b; i <= a; i++) {
+				System.out.println(i);
+				//Zählervariable um 1 erhöhen pro Durchlauf
+				zaehler++;
+			}
+			System.out.println("Anzahl der Durchläufe: " + zaehler);
+		}
+		if (a < b) {
+			//Durchschleifen wenn a kleiner als b ist wird bis einschl. b aufgezählt
+			for (int i = a; i <= b; i++) {
+				System.out.println(i);
+				//Zählervariable um 1 erhöhen pro Durchlauf
+				zaehler++;
+			}
+			System.out.println("Anzahl der Durchläufe: " + zaehler);
+		}
+		if (a == b) {
+			System.out.println("Beide Zahlen sind gleich groß!");
+		}
+	}
+}

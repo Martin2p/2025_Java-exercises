@@ -10,7 +10,42 @@ public class Zeichenkette {
 		System.out.println("Hallo! Bitte beliebige Zeichen eingeben: ");
 		
 		String eingabe = konsole.readLine();
+
+
+		//Zählvariable für Konsonanten
+		int konsonanten = 0;
 		
+		//Zählvariable für Vokale
+		int vokale = 0;
+		
+		for (int i = 0; i < eingabe.length(); i++) {
+			switch (eingabe) {
+				case "a": 
+					vokale++;
+					break;
+				case "e": 
+					vokale++;
+					break;
+				case "i": 
+					vokale++;
+					break;
+				case "o": 
+					vokale++;
+					break;
+				case "u": 
+					vokale++;
+					break;
+				default:
+					konsonanten++;
+			
+			}
+		}
+		
+		System.out.println("Eingegebener Text: " + eingabe);
+		System.out.println("Anzahl der Konsonanten: " + eingabe);
+		System.out.println("Anzahl der Selbstlaute/Vokale: " + eingabe);
+		System.out.println("Anzahl der Sonderzeichen: " + eingabe);
+		System.out.println("Anzahl der Ziffern: " + eingabe);
 		
 		
 		

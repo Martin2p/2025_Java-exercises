@@ -1,17 +1,18 @@
-import java.io.Console;
+import java.util.Scanner;
 
 public class ZahlenEinleser {
 
 	public static void main(String[] args) {
 		
-		//die Konsole für die Eingabe
-		Console konsole = System.console();
+		///neuer Scanner für Benutzereingabe
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Hallo! Bitte zwei ganze Zahlen eingeben: ");
 		
-		// 2 Variablen per Benutzereingabe über die Konsole initialisieren
-		int a = Integer.parseInt(konsole.readLine());
-		int b = Integer.parseInt(konsole.readLine());
+		//2 Variablen per Benutzereingabe über die Konsole initialisieren
+		int a = Integer.parseInt(scanner.nextLine());
+		int b = Integer.parseInt(scanner.nextLine());
+		
 		
 		//Zählervariable für Anzahl der Schleifendurchläufe 
 		int zaehler = 0;
@@ -38,5 +39,6 @@ public class ZahlenEinleser {
 		if (a == b) {
 			System.out.println("Beide Zahlen sind gleich groß!");
 		}
+		scanner.close();
 	}
 }

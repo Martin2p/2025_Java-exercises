@@ -13,7 +13,6 @@ public class ZahlenEinleser {
 		int a = Integer.parseInt(scanner.nextLine());
 		int b = Integer.parseInt(scanner.nextLine());
 		
-		
 		//Zählervariable für Anzahl der Schleifendurchläufe 
 		int zaehler = 0;
 		

@@ -35,6 +35,7 @@ public class EinMalEins {
 				System.out.print(einMaleins[i][j] + "\t");
 			}
 			//in dieser äußeren Schleife eine Anweisung für neuen Zeilenumbruch
+			//damit eine Tabellen-Ausdruck angezeigt wird
 			System.out.println();
 		}
 	}

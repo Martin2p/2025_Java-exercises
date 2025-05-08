@@ -5,13 +5,21 @@ public class Dreieck {
 	public static void main(String[] args) {
 		Scanner eingabe = new Scanner(System.in);
 		
-		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite A eingeben: ");
+		float a = Float.parseFloat(eingabe.nextLine());
+		
+		System.out.println("Bitte Seite B eingeben: ");
+		float b = Float.parseFloat(eingabe.nextLine());
+		
+		System.out.println("Bitte Seite C eingeben: ");
+		float c = Float.parseFloat(eingabe.nextLine());
+		
+		for (int i = 0;  i < a; i++) {
+			
+		}
 		
 		
-		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite B eingeben: ");
+		System.out.println("Die Abmessungen des Dreiecks lauten: " + a + " x " + b + " x " + c );
 		
-		
-		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite C eingeben: ");
 		
 		eingabe.close();
 	}

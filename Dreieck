@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Dreieck {
 
 	public static void main(String[] args) {
+		Scanner eingabe = new Scanner(System.in);
 		
-
+		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite A eingeben: ");
+		
+		
+		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite B eingeben: ");
+		
+		
+		System.out.println("Gleichschenkliges Dreieck! \n Bitte Seite C eingeben: ");
+		
+		eingabe.close();
 	}
-
 }

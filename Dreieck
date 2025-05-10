@@ -17,19 +17,17 @@ public class Dreieck {
 		
 		//einen leeren String initialisieren
 		String sterne = "";
-		String leer = " ";
-		
-		
+
 		for(int i = 0; i <= laenge; i++) {
 			
-			System.out.println(sterne);
+			String leer = "";
+			
+			for (int k = laenge/2; k > i; k--) {
+				
+				leer += " ";
+			}
 			sterne += "*";
-			leer += " ";
-		}
-		
-		for(int j = laenge - 1; j > 0; j--) {
-			sterne += "*";
-			//System.out.println(sterne);
+			System.out.println(leer + sterne);
 		}
 	
 		eingabe.close();

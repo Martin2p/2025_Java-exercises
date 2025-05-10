@@ -7,12 +7,7 @@ public class Dreieck {
 		
 		System.out.println("Gleichschenkliges Dreieck! \n Bitte die Höhe eingeben: ");
 		
-		float h = Float.parseFloat(eingabe.nextLine());
-		
-		//die Seitenlänge des Dreiecks berechnen
-		float l = h*2;
-		//umwandeln in Integer
-		int laenge = (int)l;
+		int h = Integer.parseInt(eingabe.nextLine());
 		
 		
 		//einen leeren String initialisieren
@@ -21,7 +16,9 @@ public class Dreieck {
 		for(int i = 0; i <= laenge; i++) {
 			
 			String leer = "";
-			
+
+
+
 			for (int k = laenge/2; k > i; k--) {
 				
 				leer += " ";

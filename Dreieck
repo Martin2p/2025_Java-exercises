@@ -12,12 +12,10 @@ public class Dreieck {
 		
 		/*
 		 * Äußere Schleife:
-		 * Mit der Zählvariable i wird die Integer Variable der eingegebenen Höhe durchgeschleift
-		 * und eine Zeile ausgegeben bis i dem Wert der Höhe entspricht.
-		 * 
-		 * Hier wird mit Zeile 1 gestartet.
+		 * Die Zählvariable i steht für die aktuelle Zeile und beginnt hier mit 1.
+		 * Diese Zeile wird ausgegeben bis i dem Wert der Höhe entspricht.
 		 */
-		for(int i = 1; i <= hoehe; i++) {
+		 for(int i = 1; i <= hoehe; i++) {
 
 			/*
 			 * 1. innere Schleife für die Leerzeichen:

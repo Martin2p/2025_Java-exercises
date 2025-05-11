@@ -1,3 +1,5 @@
+package src;
+
 public class EinMalEins {
 
 	public static void main(String[] args) {
